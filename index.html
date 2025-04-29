@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahaar's Naruto Theater</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="theater">
+        <h1>Welcome to Bahaar's Naruto Theater! 🍿🎬</h1>
+        <p>Naruto is a story about a young ninja who dreams of becoming the strongest Hokage of his village. It's a journey of friendship, struggle, and incredible adventures.</p>
+        
+        <video controls width="700">
+            <source src="video_2025-04-29_04-12-06.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="buttons">
+            <button onclick="playVideo()">Play Again</button>
+            <button onclick="rateMovie()">Rate Movie</button>
+        </div>
+    </section>
+
+    <script>
+        function playVideo() {
+            const video = document.querySelector('video');
+            video.currentTime = 0;
+            video.play();
+        }
+
+        function rateMovie() {
+            alert('Thanks for rating Naruto!');
+        }
+    </script>
+</body>
+</html>
